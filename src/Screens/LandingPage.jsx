@@ -18,6 +18,8 @@ import { ReactComponent as Tailwind } from "../Assets/tailwindIcon.svg"
 import { ReactComponent as AzureDevops } from "../Assets/azureDevopsIcon.svg"
 import { ReactComponent as Azure } from "../Assets/azureIcon.svg"
 import { ReactComponent as VisualStudio } from "../Assets/visualStudioIcon.svg"
+import { ReactComponent as Git } from "../Assets/git.svg"
+import { ReactComponent as Firebase } from "../Assets/firebase.svg"
 
 export const LandingPage = () => {
 
@@ -33,42 +35,43 @@ export const LandingPage = () => {
                 className="h-screen flex items-start justify-center bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${Mockup})` }}
             >
-                <div className="h-[70px] w-[334px] flex justify-center items-center bg-complementary-white rounded-[5px] mt-[10px]">
-                    <Icon />
+                <div className="h-[70px] flex justify-center items-center rounded-[5px] mt-[60px] flex-col" >
+                   <h1 className="text-center text-[60px] font-regular text-primary-blue">Apresentação Cloud Core</h1>
+                   <hr className="border-primary-blue w-[500px]" />
                 </div>
             </div>
 
             <div className="flex items-center justify-center gap-[50px] mt-[-50px]">
-                <div >
+                <div className="rounded-full border-primary-blue bg-complementary-white border-[2px] h-[170px] w-[170px] flex items-center justify-center" >
                     <button
-                        className="rounded-full border-primary-blue  border h-[170px] w-[170px] flex items-center justify-center"
+                      
                         onClick={() => scrollToSection("team")}
                     >
                         <FontAwesomeIcon icon={faUsers} className="text-[60px] text-primary-blue hover:text-[#28437e]" />
                     </button>
                 </div>
-                <div className="rounded-full border-primary-blue  border h-[170px] w-[170px] flex items-center justify-center">
+                <div className="rounded-full border-primary-blue h-[170px] w-[170px] flex items-center justify-center bg-complementary-white border-[2px]">
                     <button
                         onClick={() => scrollToSection("introduction")}
                     >
                         <FontAwesomeIcon icon={faFlagCheckered} className="text-[60px] text-primary-blue hover:text-[#28437e]" />
                     </button>
                 </div>
-                <div className="rounded-full border-primary-blue  border h-[170px] w-[170px] flex items-center justify-center">
+                <div className="rounded-full border-primary-blue  bg-complementary-white border-[2px] h-[170px] w-[170px] flex items-center justify-center">
                     <button
                         onClick={() => scrollToSection("docs")}
                     >
                         <FontAwesomeIcon icon={faFile} className="text-[60px] text-primary-blue hover:text-[#28437e]" />
                     </button>
                 </div>
-                <div className="rounded-full border-primary-blue  border h-[170px] w-[170px] flex items-center justify-center">
+                <div className="rounded-full border-primary-blue  bg-complementary-white border-[2px] h-[170px] w-[170px] flex items-center justify-center">
                     <button
                         onClick={() => scrollToSection("function")}
                     >
                         <FontAwesomeIcon icon={faDisplay} className="text-[60px] text-primary-blue hover:text-[#28437e]" />
                     </button>
                 </div>
-                <div className="rounded-full border-primary-blue  border h-[170px] w-[170px] flex items-center justify-center">
+                <div className="rounded-full border-primary-blue bg- bg-complementary-white border-[2px] h-[170px] w-[170px] flex items-center justify-center">
 
                     <button
                         onClick={() => scrollToSection("gears")}
@@ -82,63 +85,64 @@ export const LandingPage = () => {
                 <TitleSections>Time</TitleSections>
                 <hr className="border-t-2 border-primary-blue w-[120px]" />
 
-                <div className=" flex flex-wrap gap-[150px] justify-center mt-[200px]">
-                    <div className="w-[300px] h-[500px] bg-primary-blue rounded-[5px]">
+                <div className=" flex flex-wrap gap-[20px] justify-center mt-[200px]">
+                    <div className="w-[250px] h-[500px] bg-primary-blue rounded-[5px]">
                         <div className="flex flex-col items-center justify-center mt-[-100px]">
-                            <img src={Anna} className="rounded-full h-[170px]" alt="" />
+                            <img src={Anna} className="rounded-full h-[150px]" alt="" />
                             <h2 className="text-complementary-white text-[26px] font-semibold text-center">Anna Beatriz <br /> Barbosa</h2>
                             <p className="text-center text-complementary-white text-[20px] mt-[50px] ">Desenvolvimento <br /> front-end</p>
-                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] ">
-                                <a href="https://www.linkedin.com/in/annabiab/">
+                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] hover:bg-[#a1a1a1]">
+                                <a href="https://www.linkedin.com/in/annabiab/"  target="blank">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
 
                         </div>
                     </div>
-                    <div className="w-[300px] h-[500px] bg-primary-blue rounded-[5px]">
+                    <div className="w-[250px] h-[500px] bg-primary-blue rounded-[5px]">
                         <div className="flex flex-col items-center justify-center mt-[-100px]">
-                            <img src={Gui} className="rounded-full h-[170px]" alt="" />
+                            <img src={Gui} className="rounded-full h-[150px]" alt="" />
                             <h2 className="text-complementary-white text-[26px] font-semibold text-center">Guilherme <br /> Sousa</h2>
                             <p className="text-center text-complementary-white text-[20px] mt-[50px] ">Desenvolvimento <br /> front-end</p>
-                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] ">
-                                <a href="https://www.linkedin.com/in/guilherme-sousa-oliveira/">
+                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] hover:bg-[#a1a1a1]">
+                                <a href="https://www.linkedin.com/in/guilherme-sousa-oliveira/"  target="blank">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className="w-[300px] h-[500px] bg-primary-blue rounded-[5px]">
+
+                    <div className="w-[250px] h-[500px] bg-primary-blue rounded-[5px]">
                         <div className="flex flex-col items-center justify-center mt-[-100px]">
-                            <img src={Lucas} className="rounded-full h-[170px]" alt="" />
-                            <h2 className="text-complementary-white text-[26px] font-semibold text-center">Lucas <br /> Oliveira</h2>
-                            <p className="text-center text-complementary-white text-[20px] mt-[50px] ">Desenvolvimento <br /> back-end</p>
-                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] ">
-                                <a href="https://www.linkedin.com/in/lucca-gon-oliv/">
-                                    <FontAwesomeIcon icon={faLinkedinIn} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[300px] h-[500px] bg-primary-blue rounded-[5px]">
-                        <div className="flex flex-col items-center justify-center mt-[-100px]">
-                            <img src={Joao} className="rounded-full h-[170px]" alt="" />
+                            <img src={Joao} className="rounded-full h-[150px]" alt="" />
                             <h2 className="text-complementary-white text-[26px] font-semibold text-center">João Victor <br /> Bautista</h2>
                             <p className="text-center text-complementary-white text-[20px] mt-[50px] ">Desenvolvimento <br /> back-end</p>
-                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] ">
-                                <a href="https://www.linkedin.com/in/joaovictorbautista/">
+                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] hover:bg-[#a1a1a1]">
+                                <a href="https://www.linkedin.com/in/joaovictorbautista/"  target="blank">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div className="w-[300px] h-[500px] bg-primary-blue rounded-[5px]">
+                    <div className="w-[250px] h-[500px] bg-primary-blue rounded-[5px]">
                         <div className="flex flex-col items-center justify-center mt-[-100px]">
-                            <img src={Wanderson} className="rounded-full h-[170px]" alt="" />
+                            <img src={Lucas} className="rounded-full h-[150px]" alt="" />
+                            <h2 className="text-complementary-white text-[26px] font-semibold text-center">Lucas <br /> Oliveira</h2>
+                            <p className="text-center text-complementary-white text-[20px] mt-[50px] ">Desenvolvimento <br /> back-end</p>
+                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] hover:bg-[#a1a1a1]">
+                                <a href="https://www.linkedin.com/in/lucca-gon-oliv/"  target="blank">
+                                    <FontAwesomeIcon icon={faLinkedinIn} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-[250px] h-[500px] bg-primary-blue rounded-[5px]">
+                        <div className="flex flex-col items-center justify-center mt-[-100px]">
+                            <img src={Wanderson} className="rounded-full h-[150px]" alt="" />
                             <h2 className="text-complementary-white text-[26px] font-semibold text-center">Wanderson <br /> Bonfm</h2>
                             <p className="text-center text-complementary-white text-[20px] mt-[50px] ">Desenvolvimento <br /> front-end</p>
-                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] hover:bg-[#646D93">
-                                <a href="https://www.linkedin.com/in/wanderson-bonfim-b01797218/">
+                            <div className="gap-[10px] text-complementary-white flex items-center text-[45px] border rounded-full w-[70px] h-[70px] justify-center mt-[100px] hover:bg-[#a1a1a1]">
+                                <a href="https://www.linkedin.com/in/wanderson-bonfim-b01797218/" target="blank">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
                             </div>
@@ -241,7 +245,8 @@ export const LandingPage = () => {
                     <FontAwesomeIcon icon={faReact} className="text-[96px] text-primary-blue" />
                     <Tailwind />
                     <hr className=" h-[50px] border-primary-blue border" />
-                    <FontAwesomeIcon icon={faGithub} className="text-[96px] text-primary-blue" />
+                    <Git />
+                    <Firebase/>
                     <Azure />
                     <AzureDevops icon={faReact} className="text-[96px] text-primary-blue" />
                     <VisualStudio />
