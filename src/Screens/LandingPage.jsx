@@ -212,7 +212,7 @@ export const LandingPage = () => {
                 <hr className="border-t-2 border-primary-blue w-[280px]" />
                 <CustomizedTimeline />
 
-                <a href="https://drive.google.com/file/d/1xzVnM4FsJg4cWA-78ajyLj3jLWCl7nIe/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1xzVnM4FsJg4cWA-78ajyLj3jLWCl7nIe/view?usp=sharing" target="blank">
                     <p className="text-[24px] font-semibold underline text-primary-blue mt-[100px]">Link da documentação</p>
                 </a>
 
