@@ -20,6 +20,7 @@ import { ReactComponent as Azure } from "../Assets/azureIcon.svg"
 import { ReactComponent as VisualStudio } from "../Assets/visualStudioIcon.svg"
 import { ReactComponent as Git } from "../Assets/git.svg"
 import { ReactComponent as Firebase } from "../Assets/firebase.svg"
+import VideoComponent from "../Components/Video";
 
 export const LandingPage = () => {
 
@@ -225,13 +226,7 @@ export const LandingPage = () => {
 
                 <h3 className="text-[24px] text-primary-blue font-semibold  text-center mt-[100px]">Demonstração</h3>
 
-                <video
-                    className="mt-[50px] w-[1040px] h-[510px] rounded-[5px]"
-                    controls
-                >
-                    <source src="/path-to-your-video.mp4" type="video/mp4" />
-                    Seu navegador não suporta a reprodução de vídeos.
-                </video>
+                <VideoComponent/>
 
             </div>
 
